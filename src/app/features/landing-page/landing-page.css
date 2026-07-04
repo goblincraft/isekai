@@ -1,0 +1,15 @@
+.landing-page {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.realm-navigator-container {
+    width: 25%;
+    height: 100%;
+}
+
+.updates-feed-container {
+    width: 75%;
+    height: 100%;
+}
