@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Realm } from '../../../../core/models/realm';
 
 @Component({
   selector: 'app-realm-card',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './realm-card.css',
 })
 export class RealmCard {
-
+  @Input() realm!: Realm;
 }

@@ -1,1 +1,9 @@
-<div class="realm-navigator"></div>
+<div class="realm-navigator">
+  <div class="realm-list">
+    @for (realm of realms; track realm.id) {
+      <app-realm-card [realm]="realm"></app-realm-card>
+    }
+  </div>
+
+  <button mat-raised-button color="primary" (click)="openCreateRealmModal()">Create Realm</button>
+</div>

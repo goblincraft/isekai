@@ -1,1 +1,7 @@
-<p>realm-card works!</p>
+<div class="realm-card">
+  @if (realm.image) {
+    <img [src]="realm.image" [alt]="realm.title" />
+  }
+  <h3>{{ realm.title }}</h3>
+  <p>{{ realm.description }}</p>
+</div>
